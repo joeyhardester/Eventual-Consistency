@@ -26,5 +26,3 @@ NOTE: If you want to run valgrind, use the command: valgrind ./parentProcess & v
 
 I ran into multiple issues during this project, mainly with setting up the socket and dealing with Valgrind. With the socket, trying to configure the socket
 to my needs was difficult but there are tons of resources online that discuss sockets and interprocess communication (references and links are in code). With Valgrind, there was a lot of issues. First, Valgrind struggles with multiprocess testing. On that note, when I ran valgrind make run, it was causing issues that were out of my control. Also, many different issues including a issue with uninitialised bytes and the write call to the socket (later found out that you have to use memset to avoid this issue). With that being said, this project was crucial in learning about the importance of eventual consistency and interprocess communication.
-
-NOTE: I submitted this project on 11/7/23 (+5 extra credits), please pull from the last commit of the project.
